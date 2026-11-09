@@ -1,0 +1,45 @@
+:root{
+  --bg:#F0FFDF;
+  --card:#ffffff;
+  --text:#1c3325;
+  --muted:#4a6b53;
+  --green:#A8DF8E;
+  --green-d:#2f6b45;
+  --light:#eaf7e0;
+  --line:#cbe6b8;
+  --accent:#A8DF8E;
+  --accent2:#FFAAB8;
+  --pink:#FFD8DF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 Georgia,"Times New Roman",serif}
+main,.nav,footer{max-width:820px;margin:0 auto;padding:0 20px}
+a{color:var(--green-d);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--green)}
+.nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-top:14px;padding-bottom:14px;background:var(--bg);border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;font-size:15px}
+.nav nav a{margin-left:16px;color:var(--muted)}
+.nav nav a:hover{color:var(--green-d)}
+.brand{font-weight:700;color:var(--green-d)!important;font-size:17px}
+.hero{display:flex;gap:28px;align-items:center;padding:44px 0 20px;flex-wrap:wrap}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid var(--green);box-shadow:0 0 0 3px var(--pink)}
+h1{margin:0;font-size:2.3rem;color:var(--green-d)}
+.tagline{margin:6px 0 0;font-size:1.1rem}
+.loc{margin:2px 0 10px;color:var(--muted)}
+.links a{display:inline-block;margin:0 10px 6px 0;padding:3px 12px;border:1px solid var(--green);border-radius:999px;font:14px system-ui,sans-serif;color:var(--green-d)}
+.links a:hover{background:var(--green);color:#1c3325}
+section{padding:22px 0}
+h2{font-size:1.35rem;color:var(--green-d);border-bottom:2px solid var(--light);padding-bottom:6px;margin:0 0 14px}
+h3{margin:0;font-size:1.1rem}
+.intro{margin-top:0;color:var(--muted)}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{margin-bottom:12px}
+.date{display:inline-block;min-width:118px;color:var(--muted);font:14px system-ui,sans-serif}
+.tags span{display:inline-block;margin:0 8px 8px 0;padding:4px 14px;background:var(--light);border-radius:999px;font:14px system-ui,sans-serif;color:var(--green-d);border:1px solid var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:14px 18px;margin-bottom:14px}
+.meta{margin:2px 0 6px;color:var(--muted);font:14px system-ui,sans-serif}
+.card p{margin:6px 0}
+.hobbies{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hobbies .card{border-left-color:var(--accent2);background:var(--pink)}
+footer{padding-top:24px;padding-bottom:30px;color:var(--muted);font:14px system-ui,sans-serif;border-top:1px solid var(--line);margin-top:20px}
+@media(max-width:560px){.date{display:block}.nav nav a{margin:0 12px 0 0}.hobbies{grid-template-columns:1fr}}
